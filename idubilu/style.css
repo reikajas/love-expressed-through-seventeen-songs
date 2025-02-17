@@ -1,0 +1,112 @@
+/* the regular stuff */
+body {
+    margin: 0;
+    cursor: url("/cursor.png"), auto;
+  }
+  
+  div {
+      display: inline-flex;
+  }
+  
+  a {
+    text-decoration: none; 
+    color: black;
+  }
+  
+  hr {
+    margin: 0;
+  }
+  
+  .homebutton {
+    font-size: 2em;
+    font-family: "IBM Plex Mono", serif;
+    padding: 2em;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  
+  .songname {
+    /* padding-left: 2em; */
+      font-family: "Monsieur La Doulaise", serif;
+      font-size: 3em;
+      border-left: 1px black solid;
+      margin: 0;
+  }
+  
+  .lyrics {
+      font-size: 3em;
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-top: 0;
+      margin: 0;
+      border-right: 1px black solid;
+      font-family: "M PLUS 1 Code", serif;
+      word-wrap: break-word;
+      line-height: 1.6;
+      color: gray;
+      width: 70%;
+  }
+  
+  .quote:hover {
+    color: black;
+  }
+  
+  .quote:active {
+    color:rgb(255, 0, 166);
+  }
+  
+  .citations {
+    width: 17%;
+    font-family: "IBM Plex Mono", serif;
+    padding: 2em;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-align: justify;
+    /* align text to top of div */
+    position: fixed;
+    top: 11em;
+  }
+  
+  /* dimension control */
+  @media screen and (min-width: 1024px) {
+      .songname {
+        font-size: 6em;
+        padding-left: 3em;
+      }
+      .lyrics {
+        font-size: 3.5em;
+      }
+      /* .card__image {}
+      .card__more {
+        color: #52b506;
+        background: #a5e774;
+      }
+      .card__more:hover {
+        color: black;
+        background:#52b506;
+    }
+    .card__more:active {
+        text-transform: uppercase;
+        background:#52b506;
+      } */
+    }
+  
+    /* fonts */
+  .monsieur-la-doulaise-regular {
+    font-family: "Monsieur La Doulaise", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .m-plus-1-code-font {
+    font-family: "M PLUS 1 Code", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ibm-plex-mono-regular {
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 300;
+    font-style: normal;
+  }

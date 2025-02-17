@@ -1,0 +1,67 @@
+.monsieur-la-doulaise-regular {
+    font-family: "Monsieur La Doulaise", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    cursor: url("/cursor.png"), auto;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+/* not working rn */
+.scrollsnap {
+    scroll-snap-type: y mandatory;
+    overflow-x: auto;
+}
+
+div {
+    text-align: center;
+    scroll-snap-align: center;
+    flex: none;
+}
+
+a {
+    text-decoration: none; 
+    color: black;
+}
+
+h1 {
+font-family: "Monsieur La Doulaise", serif;
+font-size: 6em;
+text-align: center;
+padding-top: 4em;
+word-spacing: 0.3em;
+}
+
+.header, .sarasara, .readytolove, .verynice, .darling, .idubilu {
+    height: 6.2em;
+    margin: 0;
+}
+
+.sarasara {
+    background: radial-gradient(#FFB9EA, #FF65D1, #1977E9);
+}
+
+.readytolove {
+    background: radial-gradient(#e4ffc5, #ff6b8d, #3319a7);
+}
+
+.verynice {
+    background: radial-gradient(#AFE8FF, #faff61, #ff9557);
+}
+
+.darling {
+    background: radial-gradient(#ff9cbe, #ffe45c, #96e53c);
+}
+
+.idubilu {
+    background: radial-gradient(#fcb3ff, #cf67ff, #ff20c7);
+}

@@ -9,6 +9,8 @@ body {
     margin: 0;
     cursor: url("/cursor.png"), auto;
     animation: fadeIn 3s;
+    overflow: hidden;
+    height: 60rem;
 }
 
 @keyframes fadeIn {
@@ -16,16 +18,17 @@ body {
     100% { opacity: 1; }
   }
 
-/* not working rn */
 .scrollsnap {
     scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(auto);
     flex-flow: column nowrap;
-    overflow-x: hidden;
+    overflow: scroll;
+    height: 60rem;
 }
 
 div {
     text-align: center;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     flex: none;
 }
 
@@ -37,14 +40,19 @@ a {
 h1 {
 font-family: "Monsieur La Doulaise", serif;
 font-size: 6em;
-text-align: center;
 padding-top: 4em;
 word-spacing: 0.3em;
 }
 
-.header, .sarasara, .readytolove, .verynice, .darling, .idubilu {
-    height: 6.2em;
+.sarasara, .readytolove, .verynice, .darling, .idubilu {
+    height: 6em;
     margin: 0;
+}
+
+.header {
+    height: 6em;
+    margin: 0;
+    padding-top: 3em;
 }
 
 .sarasara {
